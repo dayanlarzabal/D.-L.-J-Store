@@ -3,8 +3,8 @@ name: Build Android APK
 on:
   push:
     branches: [main, develop]
-    paths:
-      - 'android/**'
+    paths:'**'
+    
       - '.github/workflows/build-apk.yml'
   workflow_dispatch:
 
@@ -31,7 +31,7 @@ jobs:
           cache: true
 
       - name: Get dependencies
-        working-directory: android
+      
         run: flutter pub get
 
       - name: Analyze
@@ -46,5 +46,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dlj-store-apk
-          path: android/build/app/outputs/flutter-apk/app-release.apk
+      path: build/app/outputs/flutter-apk/app-release.apk
           retention-days: 30

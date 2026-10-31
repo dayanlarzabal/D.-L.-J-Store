@@ -1,1 +1,18 @@
-
+D.-L.-J-Store/
+│
+├── .github/
+│   └── workflows/
+│       └── build-apk.yml
+│
+├── android/
+│   ├── android/
+│   ├── lib/
+│   ├── assets/
+│   └── pubspec.yaml
+│
+├── backend/
+├── web/
+├── admin/
+├── docs/
+├── README.md
+└── LICENSE
